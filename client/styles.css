@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 50vh;
+  background: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  color: #495057;
+  text-align: center;
+  padding-top: 10%;
+}
+
+h2 {
+  color: #495057;
+  text-align: center;
+}
+
+#park-list {
+  /* height: 75vh; */
+  background: #f6f9fd;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#to-do-list {
+  width: 100%;
+  background: #f6f9fd;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.park-card {
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #5fadc9;
+  border-radius: 5px;
+  margin: 5px;
+  align-items: center;
+  /* flex: 1; */
+}
+
+.park-pic {
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.park-card-name {
+  margin: 0;
+  height: 75px;
+  width: fit-content;
+}
+
+.addition-to-list-btn {
+  padding: 3px;
+  border-radius: 8px;
+  width: fit-content;
+  margin-top: 17px;
+}
+
+.delete-from-list-btn {
+  padding: 3px;
+  border-radius: 8px;
+  margin-top: 17px;
+}
+
+.addition-to-list-btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  padding: 3px;
+  border-radius: 8px;
+  width: fit-content;
+  margin-top: 17px;
+}
+
+.delete-from-list-btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  padding: 3px;
+  border-radius: 8px;
+  margin-top: 17px;
+}
+
+#middle-part {
+  height: 50vh;
+  background: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
+  background-attachment: fixed;
+}

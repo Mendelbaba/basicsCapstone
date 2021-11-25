@@ -1,0 +1,29 @@
+
+
+[
+    {"name" : "Zion National Park",
+        "id": 0,
+    "image" : "https://media.deseretdigital.com/file/2576c93235?type=jpeg&quality=55&c=15&a=4379240d"},
+    {"name" : "Arches National Park",
+        "id": 1,
+    "image" : "https://blog.trekaroo.com/wp-content/uploads/2020/07/Things-to-do-in-Arches-National-Park.jpg"},
+    {"name" : "Bryce Canyon National Park",
+        "id": 2,
+    "image" : "https://www.mygrandcanyonpark.com/wp-content/uploads/2019/01/bryce-amphitheater-sunrise_tamdouglascroft_800.jpg"},
+    {"name" : "Canyon Lands National Park",
+        "id": 3,
+    "image" : "https://www.discovermoab.com/wp-content/uploads/2017/06/canyonlands_main_image.jpg"},
+    {"name" : "Capitol Reef National Park",
+        "id": 4,
+    "image" : "https://www.myutahparks.com/wp-content/uploads/2021/02/Capitol-Reef-Golden-Throne_DP_1600.jpg"},
+    {"name" : "Discover Grand Staircase-Escalante National Monument",
+        "id": 5,
+    "image" : "https://blog-assets.thedyrt.com/uploads/2020/02/shutterstock_300698645-1.jpg"},
+    {"name" : "Kodachrome Basin State Park",
+        "id": 6,
+    "image" : "https://media.deseretdigital.com/file/ea99224297?type=jpeg&quality=55&c=15&a=4379240d"},
+    {"name" : "Lower Calf Creek Falls",
+        "id": 7,
+    "image" : "https://media.deseretdigital.com/file/dd01717012"}
+]
+
