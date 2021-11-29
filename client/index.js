@@ -3,10 +3,10 @@
 const getListbBtn = document.getElementById('get-list')
 const parkList = document.querySelector('#park-list')
 const toDoList = document.querySelector('#to-do-list')
-
+const baseURL = window.location.origin
 
 function getList(){
-    axios.get(`http://localhost:5050/parks`)
+    axios.get(`${baseURL}/parks`)
     .then(res => {
         res.data.forEach(elem => {
         
@@ -30,7 +30,7 @@ getList()
 // here starteth the add it to your itinerary funcionality.
 
 function addToItinerary(id){
-    axios.post(`http://localhost:5050/parks`,{id})
+    axios.post(`${baseURL}/parks`,{id})
     .then(res => {
         toDoList.innerHTML = ""
 
@@ -52,7 +52,7 @@ function addToItinerary(id){
 
 // if there are already parks in the to do list but the page has been reloaded
 function loadtoDoList(){
-    axios.get(`http://localhost:5050/toDoList`)
+    axios.get(`${baseURL}/toDoList`)
     .then(res => {
         toDoList.innerHTML = ""
 
@@ -75,7 +75,7 @@ loadtoDoList()
 // here endeth the add to parks function and starteth the delete from list function
 
 function markVisited(id){
-    axios.delete(`http://localhost:5050/parks/${id}`)
+    axios.delete(`${baseURL}/parks/${id}`)
     .then(res => {
         toDoList.innerHTML = ""
 
