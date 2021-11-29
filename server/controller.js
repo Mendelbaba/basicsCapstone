@@ -1,7 +1,9 @@
 const parks = require('./db.json')
-const parkItinerary = [
+// const parkItinerary = [
 
-]
+// ]
+const parkItinerary = require('./toDo.json')
+
 module.exports = {
     getParks : (req, res) => {
        res.status(200).send(parks)
@@ -31,6 +33,10 @@ module.exports = {
         console.log(parkItinerary)
         
         
+        res.status(200).send(parkItinerary)
+    },
+
+    getToDo : (req, res) => {
         res.status(200).send(parkItinerary)
     }
 

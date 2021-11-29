@@ -50,6 +50,28 @@ function addToItinerary(id){
 
 }
 
+// if there are already parks in the to do list but the page has been reloaded
+function loadtoDoList(){
+    axios.get(`http://localhost:5050/toDoList`)
+    .then(res => {
+        toDoList.innerHTML = ""
+
+
+        res.data.forEach(elem => {
+            console.log(elem.id)
+            let toDoCard = `<div class="park-card">
+            <h2 class="park-card-name">${elem.name}</h2>
+            <img class="park-pic" src=${elem.image}>
+            <button class="delete-from-list-btn" onclick="markVisited(${elem.id})">Mark visited</button> 
+           
+
+            </div>`
+            toDoList.innerHTML += toDoCard
+        })
+    })
+}
+loadtoDoList()
+
 // here endeth the add to parks function and starteth the delete from list function
 
 function markVisited(id){

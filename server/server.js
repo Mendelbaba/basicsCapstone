@@ -14,7 +14,7 @@ const ctrlFile = require("./controller.js");
 app.get("/parks", ctrlFile.getParks)
 app.post("/parks", ctrlFile.addToMyParks)
 app.delete("/parks/:id", ctrlFile.deleteFromToDo)
-
+app.get("/toDoList", ctrlFile.getToDo)
 
 
 
