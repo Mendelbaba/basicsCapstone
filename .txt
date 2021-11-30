@@ -1,0 +1,3 @@
+for this project  my mvp would be a page that displays parks data and has a button that can add a park to a seperate list.
+that list should be exactly the same but it should have a button to remove the park from the new list.
+this data should be persistent wether or not this page is reloaded.
